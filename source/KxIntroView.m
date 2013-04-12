@@ -258,6 +258,11 @@ static float addDegrees(float delta, float deg)
         [self insertSubview:_backgroundView atIndex:0];
     }
     
+    ////////////////////////////////////////////////////////////////////////////
+    // the code for creation analogues colors taken from
+    // https://github.com/bennyguitar/Colours-for-iOS
+    // Copyright (c) 2013 Ben Gordon. All rights reserved.
+    
     float h, s, b, a;
     [self.backgroundColor getHue:&h saturation:&s brightness:&b alpha:&a];
     h *= 360.f; s *= 100.f; b *= 100.f;
@@ -280,7 +285,9 @@ static float addDegrees(float delta, float deg)
     UIColor *color4 = [UIColor colorWithHue:addDegrees(-30, h)/360.f
                                  saturation:(s-5.f)/100.f
                                  brightness:(b-10.f)/100.f
-                                      alpha:a];    
+                                      alpha:a];
+    
+    ////////////////////////////////////////////////////////////////////////////
     
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = frame;
