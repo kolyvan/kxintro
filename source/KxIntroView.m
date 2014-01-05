@@ -101,7 +101,7 @@ static float addDegrees(float delta, float deg)
         
         _pages = pages;
         
-        self.backgroundColor = [UIColor colorWithRed:47/255.f green:112/255.f blue:225/255.f alpha:1.f];
+        self.backgroundColor = [UIColor blackColor];
         self.opaque = YES;
         
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
@@ -262,8 +262,8 @@ static float addDegrees(float delta, float deg)
     // the code for creation analogues colors taken from
     // https://github.com/bennyguitar/Colours-for-iOS
     // Copyright (c) 2013 Ben Gordon. All rights reserved.
-    
-    float h, s, b, a;
+
+    CGFloat h, s, b, a;
     [self.backgroundColor getHue:&h saturation:&s brightness:&b alpha:&a];
     h *= 360.f; s *= 100.f; b *= 100.f;
     
