@@ -123,7 +123,7 @@ static float addDegrees(float delta, float deg)
         
         _closeButton = [[UIButton alloc] initWithFrame:CGRectZero];
         _closeButton.titleLabel.font = [UIFont boldSystemFontOfSize:isPhone ? 16 : 20];
-        [_closeButton setTitle:NSLocalizedString(@"Close", nil) forState:UIControlStateNormal];
+        [_closeButton setTitle:NSLocalizedString(@"Close", @"Dismiss the intro screen") forState:UIControlStateNormal];
         [_closeButton addTarget:self action:@selector(closeIntro) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_closeButton];
         
