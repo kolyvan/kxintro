@@ -14,7 +14,7 @@
 
 @implementation ViewController
 
-- (id)init
+- (instancetype)init
 {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {

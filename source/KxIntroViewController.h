@@ -40,7 +40,7 @@
 
 @property (readonly, nonatomic, strong) KxIntroView *introView;
 
-- (id)initWithPages: (NSArray *) pages;
+- (instancetype)initWithPages: (NSArray *) pages NS_DESIGNATED_INITIALIZER;
 - (void) presentInView: (UIView *) view;
 - (void) presentInViewController: (UIViewController *) view
                 fullScreenLayout: (BOOL) fullScreenLayout;
