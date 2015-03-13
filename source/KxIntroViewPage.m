@@ -35,7 +35,7 @@
 
 @implementation KxIntroViewPage
 
-+ (id) introViewPageWithTitle: (NSString *) title
++ (instancetype) introViewPageWithTitle: (NSString *) title
                    withDetail: (NSString *) detail
                     withImage: (UIImage *) image
 {
@@ -46,7 +46,7 @@
     return page;
 }
 
-- (id)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {

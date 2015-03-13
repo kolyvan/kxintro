@@ -56,7 +56,7 @@
     return _introView;
 }
 
-- (id)initWithPages: (NSArray *) pages
+- (instancetype)initWithPages: (NSArray *) pages
 {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {        

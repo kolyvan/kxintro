@@ -90,7 +90,7 @@ static float addDegrees(float delta, float deg)
     }
 }
 
-- (id)initWithPages: (NSArray *) pages
+- (instancetype)initWithPages: (NSArray *) pages
 {
     NSAssert(pages.count, @"empty pages");
     

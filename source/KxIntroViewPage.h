@@ -38,7 +38,7 @@
 @property (readwrite, nonatomic, strong) UILabel *detailLabel;
 @property (readwrite, nonatomic, strong) UIImageView *imageView;
 
-+ (id) introViewPageWithTitle: (NSString *) title
++ (instancetype) introViewPageWithTitle: (NSString *) title
                    withDetail: (NSString *) detail
                     withImage: (UIImage *) image;
 

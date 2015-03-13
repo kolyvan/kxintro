@@ -56,6 +56,6 @@
 
 @property (readwrite, nonatomic, weak) id <KxIntroViewDelegate> delegate;
 
-- (id)initWithPages: (NSArray *) pages;
+- (instancetype)initWithPages: (NSArray *) pages NS_DESIGNATED_INITIALIZER;
 
 @end
